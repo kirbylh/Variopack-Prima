@@ -129,7 +129,7 @@ hr{
     text-align:center;
     padding:5%;
     background-image: linear-gradient(rgba(0,120,255, 0.6), rgba(0, 0, 0, 0.5)), 
-    url('/Users/kirbyhermanto/Library/CloudStorage/OneDrive-AsiaFootballMarketingLimited/Documents/Variopack Prima/Images/background2.jpg');
+    url('Images/background2.jpg');
     background-size: cover;
     
 }
