@@ -1,0 +1,341 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+#topBanner{
+    width : 100%;
+    position:relative;
+    overflow: hidden;
+}
+
+#topBanner::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,120,255, 0.6);
+}
+
+#topBanner img{
+    width:100%;
+    height:100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index:2;
+}
+
+.banner-text table{
+    color:white;
+    margin-top : 5%;
+    width:100%;
+}
+
+.banner-text table tr td{
+    width:33%;
+}
+
+
+.banner-text h3 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    margin-bottom : 1rem;
+}
+
+.banner-text p {
+    font-size: clamp(1rem, 2.2vw, 1.25rem);
+    margin-bottom: 1rem;
+}
+
+.btn-primary{
+    background-color: white;
+    color: rgb(0,120,255);
+    margin-bottom:5%;
+    width:30%;
+    border:none;
+    padding:1.5%;
+}
+
+hr{
+    background-color: white;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding : 5%;
+    flex-direction: row;
+    background-color: white;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding : 5%;
+    flex-direction: row;
+}
+
+
+#about div {
+    width:50%;
+    align-items: center;
+    justify-self: center;
+    vertical-align: middle;
+    text-align: justify;
+    padding : 1%;
+    display:flex;
+}
+
+
+.container p {
+    width:90%;
+}
+
+#aboutImage {
+    width:100%;
+    border-radius:10px;
+    object-fit: cover;
+}
+
+.title {
+    font-size : 180%;
+    font-weight: bold;
+}
+
+.partnerIcon {
+    width:70px
+}
+
+.partnerRow {
+    width :70%;
+    margin: 0 auto;
+}
+
+#packaging {
+    background-color: rgba(0,120,255, 0.6);
+    text-align:center;
+    padding:5%;
+    background-image: linear-gradient(rgba(0,120,255, 0.6), rgba(0, 0, 0, 0.5)), 
+    url('/Users/kirbyhermanto/Library/CloudStorage/OneDrive-AsiaFootballMarketingLimited/Documents/Variopack Prima/Images/background2.jpg');
+    background-size: cover;
+    
+}
+
+#packaging h3 {
+    color:white;
+    margin-bottom:2%;
+}
+
+.imgCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.partnerRow .col {
+    transition: transform 0.2s ease;
+}
+
+.partnerRow .col:hover {
+    transform: scale(1.02);
+}
+
+.processingRow .col .card {
+    transition : box-shadow 0.3s ease;
+}
+
+.processingRow .col .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+#processing {
+    padding:5%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.h-100 {
+    overflow : hidden;  
+}
+
+
+#processing h3 {
+    margin-bottom: 3%;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+
+.partners:hover {
+    transition: transform 0.5s ease;
+}
+
+
+#vissionMission {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    flex-direction: row;
+    background-color: rgba(0,120,255, 0.6);
+    color:white;
+}
+
+
+#vissionMission .container {
+    width:50%;
+    align-items: center;
+    justify-self: center;
+    vertical-align: middle;
+    text-align: justify;
+    padding : 3%;
+    padding-left: 3%;
+    display:flex;
+    font-size: 120%;
+}
+
+.vissionImg {
+    padding:0;
+    width:50%;
+}
+
+.vissionImg img {
+    width:100%;
+    height : 100%;
+    object-fit: cover;
+    border-radius: 0 40px 40px 0;
+}
+
+
+
+.tableImg {
+    width:80px;
+}
+
+
+.tableText {
+    color : white;
+    font-size : 180%;
+    font-weight: bold;
+}
+
+#footer {
+    text-align: left;
+    padding: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#footer div {
+    width : 30%;
+    margin : auto;
+    padding : 2%;
+    align-items: baseline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.quick-links a {
+    color : gray;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align:center;
+    color : gray;
+    font-size : 80%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about div {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .container p {
+        width: 100%;
+    }
+
+    .btn-primary{
+        margin-bottom:5%;
+        width:60%;
+        padding:3%;
+    }
+    
+    .partnerRow {
+        width :100%;
+        margin: 0 auto;
+    }
+    .imgCol {
+        margin-top:1%;
+    }
+
+    #vissionMission {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vissionImg img {
+        border-radius : 0;
+        width:100%;
+    }
+    .vissionImg {
+        padding:0;
+        width:100%;
+    }
+
+    #vissionMission .container {
+        width:100%;
+        padding : 2%;
+        font-size: 100%;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer div {
+        width : 100%;
+        margin : auto;
+        padding : 2%;
+        align-items: baseline;
+    }
+
+    #footerTag, #quickLinks {
+       display : none;
+    }
+}
+
