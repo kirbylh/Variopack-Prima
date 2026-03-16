@@ -67,6 +67,31 @@
     padding:1.5%;
 }
 
+.navbar {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0,120,255);
+}
+
+.nav-link {
+    margin : 0 20px;
+    
+}
+
+
+.contactUsBtn {
+    background-color: rgb(0,120,255) !important;
+    color: white !important;
+    padding : 0.5% 1.5%;
+}
+
 hr{
     background-color: white;
 }
@@ -271,6 +296,56 @@ ul {
     font-size : 80%;
 }
 
+#contactUs {
+    background-color: white;
+    padding: 5%;
+    
+}
+
+#contactUs form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin:auto;
+}
+
+
+
+#contactUs form div {
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    justify-content: space-between;
+}
+
+#contactUs form div div {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    
+}
+
+input[type="text"], input[type="email"], textarea, input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+button[type="submit"] {
+    background-color: rgba(0,120,255, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder {
+    font-size:80%;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -336,6 +411,10 @@ ul {
 
     #footerTag, #quickLinks {
        display : none;
+    }
+
+    #contactUs form {
+        width: 100%;
     }
 }
 
